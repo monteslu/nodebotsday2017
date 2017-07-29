@@ -1,14 +1,23 @@
 # NodeBots Day 2017
 
 
-## Hello World
 
-[https://pagenodes.com](https://pagenodes.com)
+## What is Bluetooth Low Energy?
+
+![screenshot](BLE_diagram.png)
+
 
 
 ## Web Bluetooth
 
-![screenshot](BLE_diagram.png)
+[https://pagenodes.com](https://pagenodes.com)
+
+
+## Intel Tiny Tile
+
+Intel's Arduino BLE chip.
+
+This firmware for today:  https://github.com/monteslu/ble-io/tree/master/arduino/curie_plus
 
 
 ## Bot Assembly
@@ -98,6 +107,8 @@ If you're having trouble getting things going, you can import this flow into pag
 * one pixel: `[3,12,2, 0,0,200]` - [pixel command, pin #, pixel #,  R, G, B]
 
 * whole strip: `[4,12,2, 127,255,100]` - [strip command, pin #,  R, G, B]
+
+* multiple pixels: `[3,12, 2, 127,255,100, 1, 255,0,10]` - [pixel command, pin #, pixel#,  R, G, B, pixel #,  R, G, B]
 
 ![neopixel](neopixel.png)
 
